@@ -1,5 +1,6 @@
 // TODO: Build app routes
 // TODO: Get all app routes
+// Mongoose queries are not promises. They have a .then() function for co and async/await as a convenience.
 const { Workout } = require('../models/Workout');
 const router = require('express').Router();
 
