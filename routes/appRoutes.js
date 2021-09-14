@@ -2,19 +2,19 @@
 // TODO: Get all app routes
 // Mongoose queries are not promises. They have a .then() function for co and async/await as a convenience.
 const { Workout } = require('../models/Workout');
+const express = require('express');
 const router = require('express').Router();
 
 // TODO: Get all workout routes
-router.get("/", async (req, res) => {
-    try {
-        const workoutsData = await Workout.findAll({
-           // TODO: Check with your tutor if I should include attributes
-
-        });
-        res.json(workoutsData);
-    } catch (err) {
-        res.status(500).json(err)
-    }
+router.get("/api/workouts", (req, res) => {
+    Workout.find({})
+    .then((dbWorkout) => {
+        res.json(dbWorkout);
+    });
+    .catch((err) => {
+        res.json(err)
+    });
+    
 });
 
 // Create workout 
