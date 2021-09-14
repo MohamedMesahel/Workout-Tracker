@@ -32,7 +32,10 @@ router.put("/api/workouts/:id", ({ params, body }, res) => {
 
     Workout.findOneAndUpdate(
         { _id: params.id },
-        { $push: { exercises: body } },
+        {
+            // $inc: { totalDuration: duration },
+            $push: { exercises: body } 
+        },
         { new: true }
     )
         .then((dbWorkout) => {
