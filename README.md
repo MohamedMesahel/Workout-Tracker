@@ -14,7 +14,7 @@ This is a fitness app that will allow user to view, create, and track daily work
 
 ## Installation
 - You can visit the deployed app here : [Fitness - Tracker](https://workout-trackermm.herokuapp.com/)
-- if you want to run it on your local server Download it through Github
+- If you want to run it on your local server Download it through Github
 - Run npm i or (npm install), to make sure to download all the necessary files in the jason package.
 - In your command shell run npm start.
 

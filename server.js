@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/myFirstDatabase",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnesstrackerDB",
 { useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true, useCreateIndex: true});
 
 app.use(require('./routes/appRoutes'));

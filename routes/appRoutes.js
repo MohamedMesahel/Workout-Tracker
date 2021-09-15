@@ -35,7 +35,6 @@ router.post("/api/workouts", ({ body }, res) => {
 // TODO: Get and update one workout 
 router.put("/api/workouts/:id", ({ params, body }, res) => {
     // console.log("PARAMS", body, params);
-
     Workout.findOneAndUpdate(
         { _id: params.id },
         {
@@ -51,7 +50,6 @@ router.put("/api/workouts/:id", ({ params, body }, res) => {
         });
 });
 // TODO: Get one workout/range
-
 router.get("/api/workouts/range", (req, res) => {
     Workout.aggregate([{
         $addFields: {
@@ -69,6 +67,7 @@ router.get("/api/workouts/range", (req, res) => {
 // console.log(Workout);
 
 module.exports = router;
+
 // router.get("/api/workouts", (req, res) => {
 //     Workout.find({})
 //         .then((dbWorkout) => {
