@@ -1,4 +1,4 @@
-div id="top"></div>
+<div id="top"></div>
 
 <!-- Badges -->
 [![Website shields.io](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](http://shields.io/)
@@ -74,6 +74,7 @@ Please make sure that you have the latest node packages.
 - If you want to run it on your local server Download it through Github
 - Run npm i or (npm install), to make sure to download all the necessary files in the jason package.
 - In your command shell run npm start.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Usage 
 Workout-Tracker provides the user with plenty of functionality to help them reach their fitness goals. Users are able to:
